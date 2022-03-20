@@ -1,0 +1,8 @@
+type TransferEntity @entity {
+  id: ID!
+  from: Bytes! # address
+  to: Bytes! # address
+  tokenId: BigInt!
+  path: [Bytes!]
+  hashPath: [Bytes!]
+}
